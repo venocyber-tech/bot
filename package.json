@@ -1,0 +1,30 @@
+{
+  "name": "whatsapp-automation-bot",
+  "version": "2.0.0",
+  "description": "Advanced WhatsApp automation bot optimized for Venocyber projects",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "heroku-postbuild": "echo Skip build process for Node.js app"
+  },
+  "dependencies": {
+    "qrcode-terminal": "^0.12.0",
+    "whatsapp-web.js": "^1.25.0",
+    "express": "^4.18.2",
+    "dotenv": "^16.3.1"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  },
+  "keywords": [
+    "whatsapp",
+    "bot",
+    "automation",
+    "heroku",
+    "wwebjs"
+  ],
+  "author": "Venocyber Tech",
+  "license": "MIT"
+}
