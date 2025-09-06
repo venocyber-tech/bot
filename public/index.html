@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp Bot Status</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f0f2f5;
+            color: #333;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #25D366;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 30px;
+        }
+        .status {
+            padding: 15px;
+            border-radius: 8px;
+            margin: 20px 0;
+            text-align: center;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        .online {
+            background-color: #e8f5e9;
+            color: #2e7d32;
+            border: 1px solid #c8e6c9;
+        }
+        .instructions {
+            background-color: #e3f2fd;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            border-left: 4px solid #2196f3;
+        }
+        .feature-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .feature-list li {
+            padding: 8px 0;
+            padding-left: 30px;
+            position: relative;
+        }
+        .feature-list li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #25D366;
+            font-weight: bold;
+        }
+        code {
+            background-color: #f5f5f5;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>WhatsApp Automation Bot</h1>
+        <p class="subtitle">Powered by Venocyber Tech & whatsapp-web.js</p>
+        
+        <div class="status online">
+            ✅ Bot is running successfully
+        </div>
+        
+        <div class="instructions">
+            <h3>Setup Instructions:</h3>
+            <ol>
+                <li>Check Heroku logs for the QR code: <code>heroku logs --tail --app YOUR_APP_NAME</code></li>
+                <li>Scan the QR code with your WhatsApp within 60 seconds</li>
+                <li>The bot will automatically reconnect after deployment restarts</li>
+            </ol>
+        </div>
+        
+        <h2>Features:</h2>
+        <ul class="feature-list">
+            <li>Auto-reply to messages with intelligent responses</li>
+            <li>Command system (!help, !info, !time, !status)</li>
+            <li>Keyword-based automatic responses</li>
+            <li>24/7 operation on Heroku</li>
+            <li>Automatic reconnection on failure</li>
+            <li>Admin notifications</li>
+        </ul>
+        
+        <h2>Usage:</h2>
+        <p>Send messages to the bot's WhatsApp number with commands or questions like:</p>
+        <ul>
+            <li><code>!help</code> - Show available commands</li>
+            <li><code>Hello</code> - Get a greeting response</li>
+            <li><code>What's the price?</code> - Get pricing information</li>
+            <li><code>!time</code> - Get current time</li>
+        </ul>
+        
+        <p><strong>Note:</strong> This bot uses the unofficial WhatsApp Web API. Use responsibly and comply with WhatsApp's terms of service.</p>
+    </div>
+</body>
+</html>
