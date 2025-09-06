@@ -1,0 +1,25 @@
+{
+  "name": "WhatsApp Automation Bot",
+  "description": "A WhatsApp automation bot built with Node.js and whatsapp-web.js",
+  "repository": "https://github.com/venocyber-tech/bot",
+  "logo": "images/back.png",
+  "keywords": ["node", "whatsapp", "bot", "automation", "heroku"],
+  "buildpacks": [
+    {
+      "url": "heroku-community/apt"
+    },
+    {
+      "url": "heroku/nodejs"
+    }
+  ],
+  "env": {
+    "PORT": {
+      "description": "The port where the web server will run",
+      "value": "3000"
+    },
+    "CHROMIUM_PATH": {
+      "description": "Path to Chromium browser",
+      "value": "/usr/bin/chromium-browser"
+    }
+  }
+}
