@@ -2,7 +2,7 @@
   "name": "WhatsApp Automation Bot",
   "description": "A WhatsApp automation bot built with Node.js and whatsapp-web.js",
   "repository": "https://github.com/venocyber-tech/bot",
-  "logo": "https://github.com/venocyber-tech/bot/images/back.png",
+  "logo": "https://github.com/venocyber-tech/bot/blob/main/images/back.png?raw=true",
   "keywords": ["node", "whatsapp", "bot", "automation", "heroku"],
   "buildpacks": [
     {
